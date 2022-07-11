@@ -166,20 +166,49 @@ body{
 
 .contacts-header{
    display: flex;
-   margin-left: auto;
+   margin-left: auto;   
 }
 
 
+ 
 .contacts-header .link{
-   display: block;
+   display: inline-flex;
+   align-items: center;
    padding-top: 32px;
    padding-bottom: 32px;
 
    color: var(--secondary-color);
    font-weight: 500;
    line-height: 1.14;
-   letter-spacing: 0.02em;
-   
+   letter-spacing: 0.02em;     
+}
+
+.mailto::before{
+   display: inline-block;
+   content: '';
+   width: 16px;
+   height: 12px;
+   margin-right: 10px;
+
+   background-image: url(../images/icon-svg/mailto.svg);   
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+
+
+.tel::before{
+   display: inline-block;
+   content: '';
+   width: 10px;
+   height: 16px;
+   margin-right: 10px;
+
+   background-image: url(../images/icon-svg/smartphone.svg);   
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
 }
 
 .contacts-header .item + .item{
@@ -265,18 +294,38 @@ body{
 
  .features-list{
    display: flex;
-
  }
+
 
  .features-item::before{
    display: block;
    content: '';
    
-   height: 70px;
+   height: 120px;
+   
    margin-bottom: 30px;
-   outline: 1px solid tomato;
-
+   background-color: var(--background-color);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 70px;
  }
+
+ .icon-antenna::before{
+   background-image: url('../images/icon-svg/antenna.svg'); 
+   
+ }
+
+ .icon-clock::before{
+   background-image: url('../images/icon-svg/clock.svg');
+ }
+
+ .icon-diagram::before{
+   background-image: url('../images/icon-svg/diagram.svg');
+ }
+
+ .icon-astronaut::before{
+   background-image: url('../images/icon-svg/astronaut.svg');
+}
 
  .features-list .item + .item{
    margin-left: 30px;
