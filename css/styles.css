@@ -156,55 +156,60 @@ body {
   display: flex;
   margin-left: auto;
 }
-
-.contacts-header .link {
-  display: inline-flex;
+.contacts-item .link{
+   display: inline-flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--secondary-color);
+  color: rgba(117, 117, 117, 1);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
+.contacts-item .link:hover,
+.contacts-item .link:focus {
+  color: var(--accent-color)
+}
+
+
 .contacts-item {
   display: flex;
   align-items: center;
+  color: currentColor;
+  
 }
 
 .header-icon {
   margin-right: 10px;
+  color: currentColor;
 }
 
-.icon-mailto:hover,
+/* .icon-mailto:hover,
 .icon-smartphone:hover {
   fill: var(--accent-color);
-}
+} */
 
 .icon-mailto {
   width: 16px;
   height: 12px;
 
-  fill: var(--secondary-color);
+  fill:currentColor;
 }
 
 .icon-smartphone {
   width: 10px;
   height: 16px;
 
-  fill: var(--secondary-color);
+  fill: currentColor;
 }
 
 .contacts-header .item + .item {
   margin-left: 50px;
 }
 
-.contacts-header a:hover,
-.contacts-header a:focus {
-  color: var(--accent-color);
-}
+
 
 /* Hero */
 
@@ -389,9 +394,36 @@ body {
 
   border-radius: 50%;
   background-color: var(--primary-white-color);
+  color: #afb1b8
+
 }
 
+
+.social-item:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.sotial-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: currentColor ;
+}
+
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+
+
 .social-item-bgc {
+   color: var(--primary-white-color);
   background-color: rgb(255, 255, 255, 0.1);
 }
 
@@ -399,31 +431,7 @@ body {
 .twitter.icon-color,
 .facebook.icon-color,
 .linkedin.icon-color {
-  fill: var(--primary-white-color);
-}
-
-.social-item:hover {
-  background-color: var(--accent-color);
-}
-
-.sotial-icon {
-  display: block;
-}
-
-.instagram,
-.twitter,
-.facebook,
-.linkedin {
-  fill: #afb1b8;
-  width: 20px;
-  height: 20px;
-}
-
-.instagram:hover,
-.twitter:hover,
-.facebook:hover,
-.linkedin:hover {
-  fill: var(--primary-white-color);
+  fill: currentColor;
 }
 
 .social-list .social-item + .social-item {
