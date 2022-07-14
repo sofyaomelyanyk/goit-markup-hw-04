@@ -156,8 +156,8 @@ body {
   display: flex;
   margin-left: auto;
 }
-.contacts-item .link{
-   display: inline-flex;
+.contacts-item .link {
+  display: inline-flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -170,15 +170,13 @@ body {
 
 .contacts-item .link:hover,
 .contacts-item .link:focus {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
-
 
 .contacts-item {
   display: flex;
   align-items: center;
   color: currentColor;
-  
 }
 
 .header-icon {
@@ -195,7 +193,7 @@ body {
   width: 16px;
   height: 12px;
 
-  fill:currentColor;
+  fill: currentColor;
 }
 
 .icon-smartphone {
@@ -208,8 +206,6 @@ body {
 .contacts-header .item + .item {
   margin-left: 50px;
 }
-
-
 
 /* Hero */
 
@@ -394,10 +390,8 @@ body {
 
   border-radius: 50%;
   background-color: var(--primary-white-color);
-  color: #afb1b8
-
+  color: #afb1b8;
 }
-
 
 .social-item:hover {
   color: var(--primary-white-color);
@@ -408,7 +402,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  color: currentColor ;
+  color: currentColor;
 }
 
 .instagram,
@@ -420,10 +414,8 @@ body {
   height: 20px;
 }
 
-
-
 .social-item-bgc {
-   color: var(--primary-white-color);
+  color: var(--primary-white-color);
   background-color: rgb(255, 255, 255, 0.1);
 }
 
