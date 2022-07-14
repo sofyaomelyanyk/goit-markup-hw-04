@@ -584,10 +584,6 @@ body {
   line-height: 1.7;
 }
 
-.contacts-footer a:hover,
-.contacts-footer a:focus {
-  color: var(--accent-color);
-}
 
 .address-list .item {
   display: block;
