@@ -156,13 +156,21 @@ body {
   display: flex;
   margin-left: auto;
 }
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+
+  color: rgba(117, 117, 117, 1);
+}
+
 .contacts-item .link {
   display: inline-flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: rgba(117, 117, 117, 1);
+  color: currentColor;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -173,33 +181,13 @@ body {
   color: var(--accent-color);
 }
 
-.contacts-item {
-  display: flex;
-  align-items: center;
-  color: currentColor;
-}
-
 .header-icon {
   margin-right: 10px;
   color: currentColor;
 }
 
-/* .icon-mailto:hover,
-.icon-smartphone:hover {
-  fill: var(--accent-color);
-} */
-
-.icon-mailto {
-  width: 16px;
-  height: 12px;
-
-  fill: currentColor;
-}
-
+.icon-mailto,
 .icon-smartphone {
-  width: 10px;
-  height: 16px;
-
   fill: currentColor;
 }
 
@@ -498,18 +486,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
- 
 }
 
 .work-item {
   width: calc((100% - 60px) / 3);
   /* margin-right: 30px;
   margin-bottom: 30px; */
- 
+
   background-color: var(--primary-white-color);
   border: 1px solid var(--border-color);
 }
-
 
 /* .work-list .work-item:nth-child(3n) {
   margin-right: 0;
@@ -586,7 +572,6 @@ body {
   font-style: normal;
   line-height: 1.7;
 }
-
 
 .address-list .item {
   display: block;
