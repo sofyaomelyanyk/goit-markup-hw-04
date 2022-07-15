@@ -429,7 +429,8 @@ body {
   color: #afb1b8;
 }
 
-.clients-item:hover {
+.clients-item:hover,
+.clients-item:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -444,12 +445,7 @@ body {
   height: 60px;
 }
 
-.client-one,
-.client-two,
-.client-three,
-.client-four,
-.client-fife,
-.client-six {
+.client {
   fill: currentColor;
 }
 
